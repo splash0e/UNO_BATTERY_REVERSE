@@ -1,0 +1,22 @@
+First,
+An Aurdino UNO 
+Connecting Wires (Aurdino cable for Code transfer)
+
+
+Battery
+***************IMPORTANT****************
+This prototype ONLY supports Battery rating from
+
+4.2v to 3.2v or less than 3.2v
+
+For higher battery determination we can use 
+Resistor 
+10k or 5k as per the variable rating of the Battery.
+
+Connection.
+Battery+ to Resisitor and then to the Pin (A0)
+
+Optional 
+can add an LED Too to tell if the Battery is Fully charged or not
+
+
