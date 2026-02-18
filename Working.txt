@@ -6,15 +6,15 @@ WORKING
 
 3. The measured voltage is calculated using the 5V reference.
 
-4. The voltage is mapped between:
+4. The voltage is mapped between: 4.2V → 100% (fully charged)
+3.2V → 0% (safe minimum)
 
-5. 4.2V → 100% (fully charged)
-
-6. 3.2V → 0% (safe minimum)
-
-7. The calculated battery percentage is displayed via Serial Monitor.
+5. The calculated battery percentage is displayed via Serial Monitor.
 
 
+Connect The batter positive to (A0) Pin in Aurdino and Negative to the (GND) Pin 
+afterwards upload the Code in the Aurdino and read the Percentage in (Serial monitor) Avaliable in the Aurdino IDE application.
+Make sure to disconnect all probes after the Practical.
 
 
 Applications
@@ -45,3 +45,4 @@ It provides a simple and effective way to track remaining battery capacity in em
 
 
 Mission Accomplished Respect ++++
+
