@@ -1,0 +1,42 @@
+WORKING
+
+1. The Arduino reads the battery voltage through the analog input (A0).
+
+2. The ADC (10-bit resolution) converts the analog voltage into a digital value (0–1023).
+
+3. The measured voltage is calculated using the 5V reference.
+
+4. The voltage is mapped between:
+
+5. 4.2V → 100% (fully charged)
+
+6. 3.2V → 0% (safe minimum)
+
+7. The calculated battery percentage is displayed via Serial Monitor.
+
+
+
+
+Applications
+
+1. This system can be integrated into:
+2. Portable Arduino projects
+3. Battery-powered IoT systems
+4. DIY speakers
+5. Robotics projects
+6. Power monitoring systems
+7. Low-voltage protection circuits
+8. It allows developers to:
+9. Prevent deep discharge
+10. Improve battery life
+11. Monitor system power status
+12. Trigger automatic shutdown below safe voltage
+
+
+
+
+PURPOSE
+This project implements a real-time battery voltage monitoring system using the Arduino Uno. The system reads the 
+voltage of a single-cell (3.7V) Li-ion battery and converts the measured voltage into an estimated percentage (0–100%).
+
+It provides a simple and effective way to track remaining battery capacity in embedded systems.
