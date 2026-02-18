@@ -1,0 +1,29 @@
+const float fullVoltage = 4.20;   // Fully charged
+const float emptyVoltage = 3.20;  // Safely empty
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  int raw = analogRead(A0);
+
+  // Convert ADC value to voltage
+  float voltage = raw * (5.0 / 1023.0);
+
+  // Convert voltage to percentage
+  float percentage = (voltage - emptyVoltage) * 100.0 / (fullVoltage - emptyVoltage);
+
+  // Clamp values between 0 and 100
+  if (percentage > 100) percentage = 100;
+  if (percentage < 0) percentage = 0;
+
+  Serial.print("Voltage: ");
+  Serial.print(voltage, 2);
+  Serial.print(" V  |  Battery: ");
+  Serial.print(percentage, 1);
+  Serial.println(" %");
+
+  delay(1000);
+}
