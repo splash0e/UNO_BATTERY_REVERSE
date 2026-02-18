@@ -39,4 +39,9 @@ PURPOSE
 This project implements a real-time battery voltage monitoring system using the Arduino Uno. The system reads the 
 voltage of a single-cell (3.7V) Li-ion battery and converts the measured voltage into an estimated percentage (0–100%).
 
+
 It provides a simple and effective way to track remaining battery capacity in embedded systems.
+
+
+
+Mission Accomplished Respect ++++
